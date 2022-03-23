@@ -1,6 +1,6 @@
 # Twilio WhatsApp Bot - NCAA March Madness
 
-This bot updates subscribers after each men's NCAA March Madness game. Each update includes (1) the game's final score and (2) the standings of the group's Yahoo Fantasy bracket.
+:robot: This bot updates subscribers after each men's NCAA March Madness game. Each update includes (1) the game's final score and (2) the standings of the group's Yahoo Fantasy bracket.
 
 <img src="https://user-images.githubusercontent.com/85373263/159203726-59172397-ba0c-4f95-95cc-a70ccf762c7b.PNG" width="40%"/>
 
@@ -18,6 +18,8 @@ This bot updates subscribers after each men's NCAA March Madness game. Each upda
 
 # Setup
 
+Sign up for Twilio, add Whatsapp number, set-up sandbox.
+
 Run `npm install` in root directory
 
 Change `.env.sample` to `.env` and replace the following with your variables:
@@ -31,11 +33,7 @@ Change `.env.sample` to `.env` and replace the following with your variables:
 - PHONE_NUMBER_1=subscriber-number-here
 - PHONE_NUMBER_2=etc...
 
-To add to README:
-
-- Twilio instructions (including resubMessage.js instructions)
-- Puppeteer instructions
-- Description of some constants.js variables
+Update CSS-selectors and XPaths in `getBracketStandings.js` to webscrape your specific Yahoo Fantasy Bracket.
 
 # Deployment
 
