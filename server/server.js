@@ -13,6 +13,11 @@ app.post("/sms", (req, res) => {
   res.end(twiml.toString());
 });
 
-http.createServer(app).listen(1337, () => {
-  console.log("Express server listening on port 1337");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`listening at port:${PORT}`);
 });
+
+// http.createServer(app).listen(1337, () => {
+//   console.log("Express server listening on port 1337");
+// });
