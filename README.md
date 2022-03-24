@@ -38,7 +38,9 @@ Update CSS-selectors and XPaths in `getBracketStandings.js` to webscrape your sp
 # Deployment
 
 Bot:
-Run `node marchMadnessBot.js` from root directory.
+
+- Run `node marchMadnessBot.js` from root directory.
 
 Backend server for responding to subscriber messages:
-Deploy `server.js` and point your Twilio sandbox endpoint url to the server.
+
+- Deploy `server.js` and point your Twilio sandbox endpoint url to the server.
