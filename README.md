@@ -6,7 +6,7 @@
 
 ### Features & Design
 
-- Node.js.
+- Node.js + Express.
 - [Twilio](https://www.twilio.com/docs/whatsapp/api) WhatsApp API to send messages to subscribers.
 - [Sportradar](https://developer.sportradar.com/docs/read/Home) API for NCAA data.
 - [Puppeteer](https://github.com/puppeteer/puppeteer) Node library to scrape [Yahoo Fantasy](https://tournament.fantasysports.yahoo.com/) bracket.
@@ -18,7 +18,7 @@
 
 # Setup
 
-Sign up for Twilio, add Whatsapp number, set-up sandbox.
+Sign up for Twilio, add Whatsapp number, set-up sandbox
 
 Run `npm install` in root directory
 
@@ -37,4 +37,8 @@ Update CSS-selectors and XPaths in `getBracketStandings.js` to webscrape your sp
 
 # Deployment
 
+Bot:
 Run `node marchMadnessBot.js` from root directory.
+
+Backend server for responding to subscriber messages:
+Deploy `server.js` and point your Twilio sandbox endpoint url to the server.
