@@ -13,7 +13,7 @@ async function sendMessages() {
     client.messages
       .create({
         from: `whatsapp:${botNumber}`,
-        body: "Your {{bot}} code is {{123}}",
+        body: reminderMessage,
         to: `whatsapp:${subscribers[i]}`,
       })
       .then((message) => console.log(message.sid))
